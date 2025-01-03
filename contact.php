@@ -9,6 +9,8 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // تكوين الرسالة
+
+
 $to = "alabsiali247@gmail.com"; // قم بتغيير هذا إلى بريدك الإلكتروني
 $subject = "رسالة جديدة من موقع الويب";
 $message = "
