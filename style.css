@@ -2,6 +2,7 @@
 body{
     background: #250920;
     color: #ffff;
+    font-family: 'Tajawal', sans-serif;
 }
 #navbar-1 a,
 #navbarSupportedContent ul li a,
@@ -174,6 +175,7 @@ justify-content: center;
     background: #292c33;
     transition: ease 0.1s;
     position: relative;
+    margin-top: 20px;
 }
 .card-s:hover{
    transform: translatey(-3px);
@@ -413,9 +415,34 @@ justify-content: center;
 /*ٌResponsive Design*/
 
 
-
-
-
-
-
-
+/* Apply Tajawal font to the entire body */
+body {
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  /* Add styles for the Todo App section */
+  .todo-app {
+    margin-top: 50px;
+  }
+  
+  .todo-app-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .todo-app-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-app-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .todo-app-item h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
