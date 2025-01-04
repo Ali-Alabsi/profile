@@ -1,3 +1,20 @@
+
+/* Import Tajawal font from local files */
+@font-face {
+    font-family: 'Tajawal';
+    src: url('font/Tajawal-Regular.ttf') format('woff2'),
+         url('font/Tajawal-Regular.ttf') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('font/Tajawal-Bold.ttf') format('woff2'),
+         url('font/Tajawal-Bold.ttf') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 /*#0ff7fd*/
 body{
     background: #250920;
@@ -245,6 +262,8 @@ margin-right: 20px;
 }
 .main-project-1{
     display: grid;
+    
+    
     grid-template-columns: repeat(3,1fr);
     column-gap: 20px;
     row-gap: 30px   ;
@@ -260,6 +279,10 @@ margin-right: 20px;
     justify-content: center;
     flex-wrap: wrap
 }
+.item-project {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 .main-project-1 .item-project:hover{
     transform: translateY(-5px);
 }

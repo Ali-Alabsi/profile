@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق المهام</title>
+    <title>تطبيق المعلم</title>
     <!--bootstrap-5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Font Awesome-->
@@ -38,8 +38,9 @@
     <!--todo app gallery start-->
     <section class="container todo-app" id="todo-app">
         <div class="main-todo-app text-center">
-            <h1>بعض الصفحات في تطبيق المهام</h1>
-            <div class="row justify-content-center todo-app-gallery" id="todo-app-gallery">
+            <h1>بعض الصفحات في تطبيق المعلم</h1>
+            <br>
+            <div class="row justify-content-center Learn-app-gallery" id="Learn-app-gallery">
                 <!-- JavaScript will insert items here -->
             </div>
         </div>
@@ -67,21 +68,26 @@
             return div;
         }
 
-        const gallery = document.getElementById('todo-app-gallery');
-        gallery.appendChild(createTodoAppItem('images/Todo App/المهام المطوبة.png', 'Image 1', 'المهام المطوبة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/المهام النشطة.png', 'Image 2', 'المهام النشطة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/المهام المكتملة.png', 'Image 3', 'المهام المكتملة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/اضافة مهمة.png', 'Image 4', 'اضافة مهمة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تم عملية الاضافة ب نجاح.png', 'Image 5', 'تم عملية الاضافة ب نجاح'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تعديل او حذف مهمة.png', 'Image 6', 'تعديل او حذف مهمة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/حذف مهمة.png', 'Image 7', 'حذف مهمة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تعديل مهمة.png', 'Image 8', 'تعديل مهمة'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/الاعدادت.png', 'Image 9', 'الاعدادت'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تعديل بيانات المستخدم.png', 'Image 10', 'تعديل بيانات المستخدم'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تم عملية التعديل بنجاح.png', 'Image 11', 'تم عملية التعديل بنجاح'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/الاشعارات والوقت المتبقي للمهام.png', 'Image 12', 'الاشعارات والوقت المتبقي للمهام'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/تواصل معنا.png', 'Image 13', 'تواصل معنا'));
-        gallery.appendChild(createTodoAppItem('images/Todo App/سياسة الخصوصية.png', 'Image 14', 'سياسة الخصوصية'));
+        const gallery = document.getElementById('Learn-app-gallery');
+        const images = [
+            { src: 'images/Easy Learn Teacher/signIn.png', alt: '', title: 'انشاء حساب جديد' },
+            { src: 'images/Easy Learn Teacher/login.png', alt: '', title: 'تسجيل الدخول' },
+            { src: 'images/Easy Learn Teacher/profile.png', alt: '', title: 'البروفايل' },
+            { src: 'images/Easy Learn Teacher/addCourse.png', alt: '', title: 'اضافة كورس جديد' },
+            { src: 'images/Easy Learn Teacher/addCourse2.png', alt: '', title: 'يتبع اضافة الكورسات' },
+            { src: 'images/Easy Learn Teacher/editCourse.png', alt: '', title: 'تعديل الكورسات' },
+            { src: 'images/Easy Learn Teacher/editCourseSuccessfully.png', alt: '', title: 'تم عملية تعديل الكورسات بنجاح' },
+            { src: 'images/Easy Learn Teacher/deleteVideoSuccessfully.png', alt: '', title: 'حذف محاضرة من الكورس' },
+            { src: 'images/Easy Learn Teacher/courses.png', alt: '', title: 'الكورسات الخاصة بالمعلم' },
+            { src: 'images/Easy Learn Teacher/addProject.png', alt: '', title: 'اضافة المشروع' },
+            { src: 'images/Easy Learn Teacher/viewProject.png', alt: '', title: 'عرض المشاريع' },
+            { src: 'images/Easy Learn Teacher/chat.png', alt: '', title: 'الدردشات' },
+            { src: 'images/Easy Learn Teacher/signOut.png', alt: '', title: 'تسجيل الخروج' }
+        ];
+
+        images.forEach(image => {
+            gallery.appendChild(createTodoAppItem(image.src, image.alt, image.title));
+        });
     </script>
 </body>
 </html>
