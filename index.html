@@ -18,11 +18,13 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--link style.css-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Animations.css">
+    <link rel="stylesheet" href="script.js">
 
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light " id="navbar-1">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="navbar-1">
       <div class="container">
         <a class="navbar-brand" href="#">المهندس : علي نبيل العبسي</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,150 +36,142 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#home">الرئيسية</a>
+              <a class="nav-link active" aria-current="page" href="#home">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#about">عني</a>
+              <a class="nav-link active" aria-current="page" href="#about">عني</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#serve">الخدمات</a>
+              <a class="nav-link active" aria-current="page" href="#service">الخدمات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#skils">المهارات</a>
+              <a class="nav-link active" aria-current="page" href="#skills">المهارات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#project">الملف</a>
+              <a class="nav-link active" aria-current="page" href="#project">المشاريع</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="#contact">التواصل</a>
+              <a class="nav-link active" aria-current="page" href="#contact">التواصل</a>
             </li>
-
           </ul>
-
         </div>
       </div>
     </nav>
+
+    
     <!--navbar -->
 
-    <!--hero start-->
-    <section class="hero container" id="home">
-      <div class="main-hero">
-        <div class="hero-right">
-          <img src="./images/man.png" alt>
+<!--hero start-->
+
+<section class="hero container" id="home">
+  <br>
+  <br>
+
+  <div class="main-hero">
+    <div class="hero-right">
+      <img src="./images/man.png" alt class="fade-in">
+    </div>
+    <div class="hero-left">
+      <h1 class="slide-in-left">علي نبيل العبسي</h1>
+      <h3 class="slide-in-left" style="animation-delay: 0.2s;">مهندس برمجيات</h3>
+      <p></p>
+
+      <div class="hero-left-col">
+        <div class="hero-left-col1 slide-in-up">
+          <h6>الاميل</h6>
+          <p>alabsiali247@gmail.com</p>
+          <button class="pulse"><a href="cv Eng.Ali Alabsi.pdf">Download CV</a></button>
         </div>
-        <div class="hero-left">
-          <h1>علي نبيل العبسي</h1>
-          <h3>مهندس برمجيات</h3>
-          <p> </p>
-
-          <div class="hero-left-col">
-            <div class="hero-left-col1">
-              <h6>الاميل</h6>
-              <p>alabsiali247@gmail.com</p>
-              <button><a href="cv Eng.Ali Alabsi.pdf">Download CV</a></button>
-            </div>
-            <div class="hero-left-col2">
-              <h6>LinkedIn</h6>
-              <p>Ali Alabsi</p>
-              <button><a href="www.linkedin.com/in/ali-alabsi-947285221">Hire Me
-                  Now!</a></button>
-            </div>
-          </div>
-
-          <div class="social">
-            <a href="https://www.facebook.com/eng.ali300?mibextid=JRoKGi"><i
-                class="fa-brands fa-facebook-f"></i></a>
-            <a
-              href="https://www.instagram.com/eng.ali300/profilecard/?igsh=c3pmYXB6NzFoNWV2">
-              <i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/+967771750533"><i
-                class="fa-brands fa-whatsapp"></i></a>
-            <i class="fa-solid fa-globe"></i>
-          </div>
+        <div class="hero-left-col2 slide-in-up" style="animation-delay: 0.3s;">
+          <h6>LinkedIn</h6>
+          <p>Ali Alabsi</p>
+          <button class="pulse"><a href="www.linkedin.com/in/ali-alabsi-947285221">Hire Me Now!</a></button>
         </div>
-
       </div>
-    </section>
+
+      <div class="social">
+        <a href="https://www.facebook.com/eng.ali300?mibextid=JRoKGi" class="rotate-on-hover">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/eng.ali300/profilecard/?igsh=c3pmYXB6NzFoNWV2" class="rotate-on-hover">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/+967771750533" class="rotate-on-hover">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <i class="fa-solid fa-globe rotate-on-hover"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!--hero end-->
 
     <!--about start-->
     <section class="container about" id="about">
       <div class="main-about">
-        <div class="about-right">
+        <div class="about-right animated hidden">
           <h1>عني</h1>
           <h3>مختصر عن شخصيتي</h3>
-          <p>مطور تطبيقات ومواقع ويب ومتخصص في مجال IT  شغوف بتحويل الأفكار إلى واقع. لدي خبرة عملية في تطوير تطبيقات الهواتف الذكية باستخدام Flutter وتطبيقات
-            الويب باستخدام Laravel و كيف التعامل مع البرامج الخاص في مجال IT  أحب استكشاف التقنيات الجديدة والعمل على مشاريع متنوعة.
+          <p>
+            مطور تطبيقات ومواقع ويب ومتخصص في مجال IT شغوف بتحويل الأفكار إلى واقع.
+            لدي خبرة عملية في تطوير تطبيقات الهواتف الذكية باستخدام Flutter وتطبيقات
+            الويب باستخدام Laravel وكيفية التعامل مع البرامج الخاصة في مجال IT.
+            أحب استكشاف التقنيات الجديدة والعمل على مشاريع متنوعة.
           </p>
           <button>إقرأ اكثر</button>
         </div>
-        <div class="about-left">
+        <div class="about-left animated hidden">
           <img src="./images/about-me-pic2.png" alt>
         </div>
       </div>
     </section>
+    
     <!--about end-->
 
     <!--sevices start-->
     <section class="container service" id="service">
-      <div class="sevcice-1">
+      <div class="sevcice-1 fade-in hidden">
         <h1>قائمة الخدمات</h1>
+        <br>
       </div>
-
+    
       <div class="main-sevice">
-        <div class="card-sevice ">
-          <div class="card-s ">
+        <div class="card-sevice">
+          <div class="card-s fade-in-up hidden">
             <i class="fa-solid fa-layer-group"></i>
             <h3>خدمات طلابية</h3>
-            <p>نقدم باقة متكاملة من الخدمات الطلابية المصممة لمساعدتك على النجاح
-              في دراستك. خدماتنا تشمل الدعم الأكاديمي، التوجيه المهني، التسجيل
-              في الدورات، والأنشطة الطلابية. هدفنا هو توفير بيئة تعليمية داعمة
-              تساعدك على تحقيق أقصى استفادة من تجربتك الجامعية.</p>
+            <p>نقدم باقة متكاملة من الخدمات الطلابية المصممة لمساعدتك على النجاح في دراستك. خدماتنا تشمل الدعم الأكاديمي، التوجيه المهني، التسجيل في الدورات، والأنشطة الطلابية. هدفنا هو توفير بيئة تعليمية داعمة تساعدك على تحقيق أقصى استفادة من تجربتك الجامعية.</p>
             <button>Read More</button>
           </div>
-          <div class="card-s">
+          <div class="card-s fade-in-up hidden">
             <i class="fa-solid fa-code"></i>
             <h3>تطوير مواقع الكترونية</h3>
-            <p>نقدم خدمات تطوير مواقع إلكترونية متكاملة تلبي احتياجاتك التجارية.
-              فريقنا من المطورين المحترفين يسعى جاهدًا لإنشاء مواقع إلكترونية
-              فريدة ومصممة خصيصًا لعلامتك التجارية. خدماتنا تشمل تصميم المواقع،
-              البرمجة، تحسين محركات البحث، وإدارة المحتوى. هدفنا هو مساعدتك في
-              تحقيق أقصى استفادة من وجودك على الإنترنت.</p>
+            <p>نقدم خدمات تطوير مواقع إلكترونية متكاملة تلبي احتياجاتك التجارية. فريقنا من المطورين المحترفين يسعى جاهدًا لإنشاء مواقع إلكترونية فريدة ومصممة خصيصًا لعلامتك التجارية. خدماتنا تشمل تصميم المواقع، البرمجة، تحسين محركات البحث، وإدارة المحتوى. هدفنا هو مساعدتك في تحقيق أقصى استفادة من وجودك على الإنترنت.</p>
             <button>Read More</button>
           </div>
-          <div class="card-s">
+          <div class="card-s fade-in-up hidden">
             <i class="fa-solid fa-display"></i>
             <h3>تطوير تطبيقات</h3>
-            <p>نقدم خدمات تطوير تطبيقات جوال متكاملة تلبي احتياجاتك التجارية.
-              فريقنا من المطورين المحترفين يسعى جاهدًا لإنشاء تطبيقات جوال فريدة
-              ومصممة خصيصًا لعلامتك التجارية. خدماتنا تشمل تصميم تطبيقات، برمجة،
-              ونشرها في المتاجر. هدفنا هو مساعدتك في الوصول إلى جمهور أكبر
-              وتعزيز تفاعلك مع عملائك.</p>
+            <p>نقدم خدمات تطوير تطبيقات جوال متكاملة تلبي احتياجاتك التجارية. فريقنا من المطورين المحترفين يسعى جاهدًا لإنشاء تطبيقات جوال فريدة ومصممة خصيصًا لعلامتك التجارية. خدماتنا تشمل تصميم تطبيقات، برمجة، ونشرها في المتاجر. هدفنا هو مساعدتك في الوصول إلى جمهور أكبر وتعزيز تفاعلك مع عملائك.</p>
             <button>Read More</button>
           </div>
-          <div class="card-s ">
+          <div class="card-s fade-in-up hidden">
             <i class="fa-solid fa-headset"></i>
             <h3>خدمات الدعم الفني</h3>
             <p>نقدم مجموعة شاملة من خدمات الدعم الفني التي تهدف إلى تسهيل تجربتك التقنية في بيئة العمل أو الدراسة. تشمل خدماتنا الدعم الفني المباشر عبر الهاتف أو البريد الإلكتروني، صيانة الأنظمة، حل المشكلات التقنية، والإعدادات الخاصة بالأجهزة والبرمجيات. فريق الدعم الفني لدينا جاهز للمساعدة في أي وقت لضمان استمرارية العمل والدراسة دون انقطاع.</p>
             <button>قراءة المزيد</button>
           </div>
-          
-          <div class="card-s">
+          <div class="card-s fade-in-up hidden">
             <i class="fa-solid fa-computer"></i>
             <h3>العمل في قسم تكنولوجيا المعلومات (IT)</h3>
             <p>يُعد قسم تكنولوجيا المعلومات (IT) العمود الفقري لضمان سير العمليات التقنية بسلاسة في أي مؤسسة. نحن نعمل على تطوير وصيانة الأنظمة البرمجية، إدارة الشبكات، تأمين البيانات، وتقديم الحلول التقنية المبتكرة. يُمكنك الانضمام إلى فريقنا المتميز لتطوير مهاراتك المهنية والتقنية والمساهمة في تحسين الأنظمة وتوفير الدعم للمستخدمين عبر بيئات العمل المختلفة.</p>
             <button>قراءة المزيد</button>
           </div>
-          
         </div>
       </div>
     </section>
+    
     <!--sevices end-->
 
     <!--skills start-->

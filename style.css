@@ -21,20 +21,53 @@ body{
     color: #ffff;
     font-family: 'Tajawal', sans-serif;
 }
-#navbar-1 a,
-#navbarSupportedContent ul li a,
-#toggle-1{
-    color:#ffff;
-    transition: ease-in 0.5s;
-}
-#navbarSupportedContent ul li a:hover{
-    color:#0ff7fd ;
-text-decoration: underline;
-}
-#toggle-1{
-    color: #ffff;
-    background: #ffff;
-}
+/* تثبيت شريط التنقل */
+#navbar-1 {
+    position: fixed; /* يجعل الشريط مثبتًا */
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* لون شفاف */
+    z-index: 999; /* ضمان أن يكون فوق المحتوى */
+    transition: background-color 0.5s ease, padding 0.3s ease;
+  }
+  
+  /* الشريط أثناء التمرير */
+  .navbar.scrolled {
+    background-color: #000; /* تغيير اللون عند التمرير */
+    padding: 10px 0; /* تقليل الحشوة عند التمرير */
+  }
+  
+  /* تنسيق الروابط */
+  #navbar-1 a,
+  #navbarSupportedContent ul li a {
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* تأثير hover */
+  #navbarSupportedContent ul li a:hover {
+    color: #0ff7fd;
+    text-decoration: underline;
+    transform: scale(1.1); /* تكبير النص قليلاً عند التمرير */
+  }
+  
+  /* زر التبديل */
+  #toggle-1 {
+    color: #fff;
+    background: #fff;
+  }
+  
+  /* إضافة حركة عند ظهور أو إخفاء القائمة */
+  .navbar-collapse.collapse {
+    transition: height 0.3s ease;
+  }
+  
+  /* زر التبديل أثناء التمرير */
+  #toggle-1:hover {
+    color: #0ff7fd;
+    background: transparent;
+  }
+  
 /*hero start*/
 .hero{
     color: #ffff;
