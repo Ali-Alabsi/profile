@@ -303,7 +303,9 @@ margin-right: 20px;
     margin-bottom: 20px;
 }
 .main-project-1 .item-project{
+    align-items: center;
   width: 400px;
+  height: 400px;
   border: 2px solid #0ff7fd;
   border-radius: 15px;
   transition: ease 0.5s;
@@ -315,12 +317,14 @@ margin-right: 20px;
 .item-project {
     text-align: center;
     margin-bottom: 20px;
+   
   }
 .main-project-1 .item-project:hover{
     transform: translateY(-5px);
 }
 .main-project-1 .item-project img{
     width: 320px;
+    /* height: 320px; */
     border: 2px solid #0ff7fd;
     border-radius: 15px;
 }

@@ -143,3 +143,33 @@
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
 }
+
+/* Teacher */
+
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.todo-app-item {
+  opacity: 0; /* عنصر مخفي مبدئيًا */
+  transform: translateY(50px); /* تحريك من الأسفل */
+  transition: transform 0.8s ease, opacity 0.8s ease; /* حركات انسيابية */
+}
+
+.todo-app-item img {
+  border-radius: 10px; /* زوايا مستديرة */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  transition: transform 0.3s ease; /* تكبير عند التمرير */
+}
+
+.todo-app-item img:hover {
+  transform: scale(1.1); /* تكبير عند التمرير */
+}
+
+.todo-app-item.added {
+  opacity: 1; /* يظهر العنصر */
+  transform: translateY(0); /* العودة إلى الوضع الطبيعي */
+}
